@@ -3,8 +3,59 @@
   width: 100%;
 
   background: url("../img/about-village-bg.jpg") no-repeat;
+
+  overflow: hidden;
 }
 
 .about-village__parallelogram-bg {
+  position: relative;
 
+  min-height: 790px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 76px;
+
+  background-color: rgba(255, 255, 255, 0.82);
+
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left:-400px;
+    top: -150px;
+
+    width: 0;
+	  height: 0;
+    display: block;
+	  border-bottom: 1000px solid rgba(255, 255, 255, 0.82);
+	  border-left: 400px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -400px;
+    top: -150px;
+
+    width: 0;
+  	height: 0;
+  	border-top: 1000px solid rgba(255, 255, 255, 0.82);
+  	border-right: 400px solid transparent;
+  }
+}
+
+.about-village__title {
+  margin-bottom: 38px;
+
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.about-village__paragraph {
+  margin-bottom: 42px;
+  
+  font-size: 24px;
+  line-height: 30px;
 }
