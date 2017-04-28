@@ -1,6 +1,16 @@
 .intro {
   background: url("../img/intro-bg.jpg") no-repeat;
   background-size: cover;
+  background-position: 50%;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+
 }
 
 header {
@@ -47,7 +57,7 @@ header {
 .intro__booking {
   padding: 12px 40px;
 
-  background-color: #91da60;
+  background-color: #61db55;
   border: 5px solid #ffffff;
   border-radius: 29px;
 
@@ -61,6 +71,8 @@ header {
   margin-bottom: 60px;
 
   background-color: #ffffff;
+
+
 }
 
 .main-nav__list {
@@ -73,11 +85,12 @@ header {
 }
 
 .main-nav__item {
-  padding: 18px 50px;
+  padding: 18px 40px;
 
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+
 }
 
 .intro__selltext {
@@ -85,16 +98,19 @@ header {
 
   padding-top: 26px;
   padding-bottom: 16px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
-  background-color: #a0d8e7;
+  /*background-color: #a0d8e7; */
+  background-color: rgba(126, 211, 213, 0.9)
 }
 
 .intro__title {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 38px;
+  line-height: 43px;
+
   color: #ffffff;
-  text-align: center;
+  text-align:center;
+
 }
 
 .intro__features {
@@ -102,6 +118,7 @@ header {
   display: -ms-flex;
   display: flex;
   justify-content: space-around;
+
 }
 
 .intro__feature-item {
@@ -113,7 +130,7 @@ header {
   &::after {
     content: "";
     position: absolute;
-    right: -40px;
+    right: -20px;
     top: 10px;
 
     height: 32px;
@@ -131,7 +148,7 @@ header {
 }
 
 .intro__infotext {
-  max-width: 830px;
+  max-width: 980px;
   margin: 0 auto;
   margin-bottom: 42px;
 
@@ -140,24 +157,46 @@ header {
   color: #ffffff;
   text-align: center;
 
+
   & h3 {
     margin-bottom: 20px;
 
-    font-size: 30px;
+    font-size: 28px;
     line-height: 36px;
     text-transform: uppercase;
+
+      -webkit-text-stroke: 2px black;
+
   }
 }
 
 .intro__know-more {
-  padding: 14px 72px;
+  padding: 14px 42px;
   margin: 0 auto;
+  margin-bottom: 100px;;
 
-  background-color: #58b3de;
+  background-color: #00b5e0;
   border: 6px solid #ffffff;
   border-radius: 43px;
 
   color: #ffffff;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 34px;
+  line-height: 43px;
+}
+
+.intro__tel {
+  font-family: "Geometria-Bold";
+
+}
+
+.intro__title,
+.intro__know-more,
+.intro__infotext h3 {
+  font-family: "Geometria-Heavy";
+}
+.main-nav__item,
+.intro__features {
+
+  font-family: 'Geometria-Medium';
+
 }
