@@ -1,5 +1,6 @@
 .three-steps {
   margin-bottom: 50px;
+  order: 7;
 
   background: url("../img/3steps-bg.jpg") no-repeat;
   background-position: 50%;
@@ -7,9 +8,15 @@
   background-size: cover;
 
   height: 1100px;
+
+  @media @phone-width {
+    order: 8;
+    padding-top: 26px;
+    margin-bottom: 26px;
+  }
 }
 
-.three-steps__title h2 {
+.three-steps__title {
   margin: 0 auto;
   margin-bottom: 38px;
 
@@ -20,17 +27,44 @@
 
   font-family: "Geometria-Bold";
 
+  @media @phone-width {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
+
+.three-steps__title--desktop {
+  @media @phone-width {
+    display: none;
+  }
+}
+
+.three-steps__title--phone {
+  display: none;
+
+  @media @phone-width {
+    display: block;
+  }
+}
+
 .three-steps__list {
   .container();
+
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-
   justify-content: center;
   align-items: baseline;
+
+  @media @phone-width {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 .three-steps__item {
+  position: relative;
+
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -40,6 +74,9 @@
 
   min-width: 300px;
 
+  @media @phone-width {
+    margin-bottom: 16px;
+  }
 }
 .three-steps__item-arrow {
   width: 40px;
@@ -50,33 +87,59 @@
   position: relative;
   top:-70px;
 
+  @media @phone-width {
+    top: 0;
 
+    width: 30px;
+    height: 60px;
+    margin-bottom: 20px;
+
+    transform: rotate(90deg);
+
+    & img {
+      width: 30px;
+      height: 60px;
+    }
+  }
 }
+
+.three-steps__image {
+  margin-bottom: 10px;
+}
+
 .three-steps__item-title {
+  margin: 0;
+  margin-bottom: 10px;
+
   color: #0081bb;
 
-  font-size: 25px;
+  font-size: 24px;
+  line-height: 30px;
 
   font-family: "Geometria-Bold";
 
   text-align: center;
+
+  @media @phone-width {
+    color: #000000;
+  }
 }
 
-.three-steps__item h4 {
-  margin-bottom: 10px;
-
-}
 .three-steps__text {
-  padding: 10px 10px;
   text-align: center;
-
   color: #0081ba;
 
   font-family: "Geometria";
+
+  @media @phone-width {
+    font-size: 16px;
+    color: #000000;
+  }
 }
 
 .three-steps__excursion {
   padding: 16px 40px;
+  margin: 0 auto;
 
   background-color: #e74c4c;
   border-radius: 22px;
