@@ -45,13 +45,62 @@
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
+
+  display: block;
+  position: relative;
+  left: 30px;
 }
 
 
-.general-plan__status--available {
+.general-plan__status--available::before {
+
+  content: "";
+
+  width: 38px;
+  height: 38px;
+
+  background: #ff8484;
+
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+
+  display: block;
+  display: block;
+  position: relative;
+  left: 18px;
 
 }
 
-.general-plan__status--available {
+.general-plan__excursion::before {
+  display: inline-block;
+  float: left;
+  position: relative;
+  top:-5px;
+
+  content:url('../img/eye.png');
+
+  width: 62px;
+  height: 40px;
+
+  margin-right: 10px;
+
+
+}
+
+.general-plan__excursion {
+  float: right;
+  color:#62db55;
+
+  text-decoration: underline;
+
+  font-size: 20px;
+  line-height: 26px;
+
+
+
+  font-family: "Geometria";
+
+  cursor: pointer;
 
 }
