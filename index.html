@@ -237,6 +237,7 @@
               <img src="/img/order.png" width="218" height="218" alt="Заявка" class="three-steps__image">
               <h4 class="three-steps__item-title">Заявка</h4>
               <p class="three-steps__text">Вы оставляете заявку на экскурсию</p>
+              <button class="three-steps__excursion"> Хочу экскурсию </button>
             </li>
             <li class="three-steps__item">
               <img src="/img/people.png" width="218" height="218" alt="Люди" class="three-steps__image">
@@ -251,14 +252,23 @@
             </li>
           </ul>
 
-          <!-- <button class="3-steps__excursion"> Хочу экскурсию </button> -->
+
       </div>
 
 
       <div class="photos">
-           <h2>Фотографии<h2>
+           <h2 class="photos__title">Фотографии</h2>
 
             <div class="photos__slider">
+              <a href="" class="photos__slider-btn photos__slider-btn--prev">
+                <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
+                <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
+              </a>
+              <div class="photos__slider-content"></div>
+              <a href="" class="photos__slider-btn photos__slider-btn--next">
+                <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
+                <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
+              </a>
             </div>
       </div>
 
@@ -275,7 +285,7 @@
 
                <p class="reviews__author">Владимир</p>
 
-               <p class="reviews__author-url">vk.com/username</p>
+               <a href="" class="reviews__author-url">vk.com/username</a>
              </div>
 
              <blockquote class="reviews__quote">
@@ -291,32 +301,33 @@
       </div>
 
       <div class="better-to-see">
-           <h2 class="better-to-see__title">Лучше 1 раз увидеть</h2>
-           <p class="better-to-see__info">
-             звоните 98-92-02запишитесь на бесплатную экскурсию
-           </p>
+           <div class="better-to-see__container-wrap">
+             <h2 class="better-to-see__title">Лучше 1 раз увидеть</h2>
+             <p class="better-to-see__info">
+               звоните 98-92-02запишитесь на бесплатную экскурсию
+             </p>
 
-           <form class="better-to-see__form" action="">
-               <label>
-                   Имя*
-                   <input type="text" name="name" required>
-               </label>
+             <form class="better-to-see__form" action="">
+                 <label>
+                     Имя*
+                     <input type="text" name="name" required>
+                 </label>
 
-               <label>
-                 Телефон*
-                 <input type="phone" name="phone" required>
-               </label>
+                 <label>
+                   Телефон*
+                   <input type="phone" name="phone" required>
+                 </label>
 
-               <button class="better-to-see__submit"> Отправить </button>
-           </form>
+                 <button class="better-to-see__submit"> Отправить </button>
+             </form>
+           </div>
       </div>
 
       <footer>
         <div class="copyright">
           <p>
-            Все права защищены, 2017г.
-            «Золотой треугольник»
-            Не является публичной офертой
+            Все права защищены, 2017г. «Золотой треугольник» <br>
+            Не является публичной офертой <br>
             Адрес электронной почты: mail@gmail.com
           </p>
           <p>
