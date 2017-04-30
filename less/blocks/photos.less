@@ -1,11 +1,19 @@
 .photos {
   .container();
+  order: 8;
 
   margin-bottom: 96px;
 
-  margin-top: -100px;
-  @media @tablet-width {
-    margin-top: 0px;
+
+
+
+  @media @phone-width {
+    order: 7;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 26px;
+    width: 88%;
   }
 }
 
@@ -19,6 +27,13 @@
   text-align: center;
 
   font-family: "Geometria-Bold";
+
+  @media @phone-width {
+    margin-bottom: 26px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .photos__slider {
@@ -33,6 +48,11 @@
   width: 78%;
   height: 510px;
   background-color: grey;
+
+  @media @phone-width {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 .photos__slider-btn {
@@ -44,6 +64,10 @@
   border-radius: 40px;
 
   background: #99c23f;
+
+  @media @phone-width {
+    display: none;
+  }
 }
 
 .photos__slider-btn--prev {

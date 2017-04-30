@@ -6,11 +6,17 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  order: 4;
 
   flex-direction: column;
   align-items: center;
+  padding-top: 26px;
 
   border-bottom: 2px solid #484848;
+
+  @media @phone-width {
+    border-bottom: none;
+  }
 }
 
 .advantages__title {
@@ -26,6 +32,26 @@
 
     max-width: 900px;
 
+    @media @phone-width {
+      margin-bottom: 26px;
+
+      font-size: 24px;
+      line-height: 30px;
+    }
+}
+
+.advantages__title--desktop {
+  @media @phone-width {
+    display: none;
+  }
+}
+
+.advantages__title--phone {
+  display: none;
+
+  @media @phone-width {
+    display: block;
+  }
 }
 
 .advantages__list {
@@ -37,6 +63,10 @@
     flex-wrap: wrap;
 
     margin-bottom: 80px;
+
+    @media @phone-width {
+      margin-bottom: 40px;
+    }
 }
 .advantages__item {
    display: -webkit-flex;
@@ -47,9 +77,19 @@
    align-items: center;
    margin-bottom: 50px;
 
-
-
    max-width: 499px;
+
+   @media @phone-width {
+     flex-direction: column;
+     margin: 0 auto;
+     margin-bottom: 50px;
+
+     text-align: center;
+
+     &:last-child {
+       margin-bottom: 0;
+     }
+   }
 }
 .advantages__item-text {
   padding: 20px;
@@ -59,6 +99,11 @@
   font-family: "Geometria-Medium";
   font-size: 20px;
   line-height: 20px;
+
+  @media @phone-width {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .advantages__item-text h4 {
   margin: 0;
@@ -66,6 +111,13 @@
 
   font-size: 20px;
   line-height: 36px;
+
+  @media @phone-width {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .advantages-question {
@@ -73,6 +125,8 @@
   top:-35px;
   background-color: #62db55;
   border-radius: 50px;
+
+  order: 5;
 
   padding: 10px 30px;
 
@@ -91,6 +145,14 @@
   cursor: pointer;
 
    margin: 0 auto;
+
+   @media @phone-width {
+     padding: 13px 30px;
+     margin-bottom: 50px;
+
+     font-size: 16px;
+     line-height: 24px;
+   }
 }
 .advantages-question img {
   width: 45px;

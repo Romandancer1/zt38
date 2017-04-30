@@ -1,20 +1,24 @@
 .about-village {
-  height: 790px;
   width: 100%;
+  order: 2;
 
   background: url("../img/about-village-bg.jpg") no-repeat;
   background-size: cover;
 
   overflow: hidden;
+
+  @media @phone-width {
+  }
 }
 
 .about-village__parallelogram-bg {
+  .container();
+
   position: relative;
 
-  min-height: 790px;
-  max-width: 1000px;
   margin: 0 auto;
   padding-top: 76px;
+  padding-bottom: 320px;
 
   background-color: rgba(255, 255, 255, 0.82);
 
@@ -44,6 +48,11 @@
   	border-top: 1000px solid rgba(255, 255, 255, 0.82);
   	border-right: 400px solid transparent;
   }
+
+  @media @phone-width {
+    padding-top: 26px;
+    padding-bottom: 66px;
+  }
 }
 
 .about-village__title {
@@ -54,6 +63,13 @@
   text-transform: uppercase;
 
   font-family: "Geometria-Bold";
+
+  @media @phone-width {
+    margin-bottom: 22px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .about-village__paragraph {
@@ -61,4 +77,11 @@
 
   font-size: 24px;
   line-height: 30px;
+
+  @media @phone-width {
+    margin-bottom: 22px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

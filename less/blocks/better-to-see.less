@@ -1,4 +1,6 @@
 .better-to-see {
+  order: 10;
+
   background: url("../img/better-to-see-bg.jpg") no-repeat;
   background-size: cover;
 }
@@ -10,6 +12,11 @@
   padding-bottom: 142px;
 
   color: #ffffff;
+
+  @media @phone-width {
+    padding-top: 26px;
+    padding-bottom: 50px;
+  }
 }
 
 .better-to-see__title {
@@ -22,6 +29,13 @@
   text-align: center;
 
   font-family: "Geometria-Bold";
+
+  @media @phone-width {
+    margin-bottom: 22px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .better-to-see__info {
@@ -35,6 +49,13 @@
   text-transform: uppercase;
 
   font-family: "Geometria-Bold";
+
+  @media @phone-width {
+    margin-bottom: 18px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .better-to-see__form {
@@ -55,6 +76,13 @@
 
     font-size: 24px;
     line-height: 30px;
+
+    @media @phone-width {
+      margin-bottom: 18px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   & input {
@@ -64,6 +92,16 @@
 
     font-size: 24px;
     line-height: 30px;
+
+    @media @phone-width {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media @phone-width {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -81,5 +119,11 @@
 
   cursor: pointer;
 
+  @media @phone-width {
+    padding: 13px 22px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 
 }

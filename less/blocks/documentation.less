@@ -1,0 +1,41 @@
+.documentation {
+  .container();
+
+  display: none;
+  padding-top: 26px;
+  margin: 0;
+  margin-bottom: 50px;
+  order: 6;
+
+  text-align: center;
+
+  @media @phone-width {
+    display: block;
+  }
+}
+
+.documentation__title {
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.documentation__files {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.documentation__text {
+  display: block;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
