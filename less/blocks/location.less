@@ -94,3 +94,31 @@
     }
   }
 }
+
+.location__excursion {
+  display: none;
+
+  @media @phone-width {
+    display: block;
+
+    color:#62db55;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Geometria";
+
+    cursor: pointer;
+
+    &::before {
+      content: url('../img/eye.png');
+      position: relative;
+      top:-5px;
+
+      display: inline-block;
+      float: left;
+      width: 62px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+}
