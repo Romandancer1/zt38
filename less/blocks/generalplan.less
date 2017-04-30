@@ -27,6 +27,13 @@
   text-align: center;
 
   font-family: "Geometria-Bold";
+
+  @media @tablet-width {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 /* пока картинки нет, поставил заглушку */
 .general-plan-map {
@@ -36,7 +43,12 @@
   background: #c6c6c6;
 
   margin: 0 auto;
-  margin-bottom: 30px;;
+  margin-bottom: 30px;
+
+  @media @tablet-width {
+    width: 94%;
+    margin-bottom: 24px;
+  }
 }
 
 .general-plan__status--sold::before {
@@ -47,13 +59,18 @@
 
   background: #98e98b;
 
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 
   display: block;
   position: relative;
   left: 30px;
+
+  @media @tablet-width {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 
@@ -66,14 +83,19 @@
 
   background: #ff8484;
 
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 
   display: block;
   display: block;
   position: relative;
   left: 18px;
+
+  @media @tablet-width {
+    width: 30px;
+    height: 30px;
+  }
 
 }
 
@@ -90,6 +112,12 @@
 
   margin-right: 10px;
 
+  @media @tablet-width {
+    left: -15px;
+
+    width: 35px;
+    height: 23px;
+  }
 
 }
 

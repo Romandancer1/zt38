@@ -32,6 +32,14 @@
 
     max-width: 900px;
 
+    @media @tablet-width {
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+      font-size: 30px;
+      line-height: 36px;
+    }
+
     @media @phone-width {
       margin-bottom: 26px;
 
@@ -59,10 +67,15 @@
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    justify-content: space-between;
 
     flex-wrap: wrap;
 
     margin-bottom: 80px;
+
+    @media @tablet-width {
+      margin-bottom: 60px;
+    }
 
     @media @phone-width {
       margin-bottom: 40px;
@@ -79,8 +92,16 @@
 
    max-width: 499px;
 
+   @media @tablet-width {
+     flex-direction: column;
+     width: 45%;
+
+     text-align: center;
+   }
+
    @media @phone-width {
      flex-direction: column;
+     width: auto;
      margin: 0 auto;
      margin-bottom: 50px;
 
@@ -91,6 +112,7 @@
      }
    }
 }
+
 .advantages__item-text {
   padding: 20px;
 
@@ -99,6 +121,9 @@
   font-family: "Geometria-Medium";
   font-size: 20px;
   line-height: 20px;
+
+  @media @tablet-width {
+  }
 
   @media @phone-width {
     font-size: 16px;
@@ -122,7 +147,7 @@
 
 .advantages-question {
   position: relative;
-  top:-35px;
+  top: -35px;
   background-color: #62db55;
   border-radius: 50px;
 
@@ -145,6 +170,11 @@
   cursor: pointer;
 
    margin: 0 auto;
+
+   @media @tablet-width {
+     font-size: 24px;
+     line-height: 30px;
+   }
 
    @media @phone-width {
      padding: 13px 30px;
