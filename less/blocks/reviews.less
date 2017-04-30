@@ -5,7 +5,7 @@
   margin-bottom: 50px;
   order: 9;
 
-  @media @phone-width {
+  @media @tablet-width {
     margin-top: 35px;
   }
 
@@ -21,6 +21,13 @@
   text-align: center;
 
   font-family: "Geometria-Bold";
+
+  @media @tablet-width {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
 
   @media @phone-width {
     margin-bottom: 26px;
@@ -56,6 +63,10 @@
   background-color: #e2f9fc;
   border-radius: 8px;
 
+  @media @tablet-width {
+    padding: 10px;
+  }
+
   @media @phone-width {
     flex-direction: column;
     padding: 0;
@@ -79,14 +90,18 @@
   margin-bottom: 22px;
 
   background-color: grey;
-  border-radius: 110px;
+  border-radius: 50%;
+
+  @media @tablet-width {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
 
   @media @phone-width {
     width: 140px;
     height: 140px;
     margin-bottom: 18px;
-
-    border-radius: 70px;
   }
 }
 
@@ -97,6 +112,10 @@
   line-height: 24px;
 
   font-family: "Geometria-Bold";
+
+  @media @phone-width {
+    margin-bottom: 14px;
+  }
 
   @media @phone-width {
     margin-bottom: 10px;
@@ -118,6 +137,11 @@
 
   font-size: 14px;
   line-height: 24px;
+
+  @media @tablet-width {
+    width: 50%;
+    padding-top: 30px;
+  }
 
   @media @phone-width {
     position: relative;

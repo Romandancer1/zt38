@@ -43,6 +43,15 @@
   font-family: "Geometria-Bold";
 
   @media @phone-width {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @media @phone-width {
+    margin-bottom: 38px;
+
     font-size: 24px;
     line-height: 24px;
   }
@@ -81,10 +90,14 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: baseline;
 
   margin-bottom: 20px;
+
+  @media @tablet-width {
+    margin-bottom: 16px;
+  }
 
 
   @media @phone-width {
@@ -103,7 +116,11 @@
   flex-direction: column;
   align-items: center;
 
-  min-width: 300px;
+  width: 300px;
+
+  @media @tablet-width {
+    max-width: 200px;
+  }
 
   @media @phone-width {
     margin-bottom: 16px;
@@ -111,33 +128,42 @@
 }
 .three-steps__item-arrow {
   width: 40px;
-  height:81px;
+  height: 81px;
 
   display: block;
 
   position: relative;
-  top:-70px;
+  top: -70px;
 
-  @media @phone-width {
-    top: 0;
+  @media @tablet-width {
+    top: -55px;
 
     width: 30px;
     height: 60px;
-    margin-bottom: 20px;
-
-
-    transform: rotate(90deg);
-
 
     & img {
       width: 30px;
       height: 60px;
     }
   }
+
+  @media @phone-width {
+    top: 0;
+
+    margin-bottom: 20px;
+
+
+    transform: rotate(90deg);
+  }
 }
 
 .three-steps__image {
   margin-bottom: 10px;
+
+  @media @tablet-width {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 .three-steps__item-title {
