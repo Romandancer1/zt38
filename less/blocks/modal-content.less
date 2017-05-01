@@ -1,0 +1,191 @@
+.modal-content-callback,
+.modal-content-excursion {
+  max-width: 450px;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-direction: column;
+
+  display: none;
+
+  margin:0px auto;
+  /*margin-top: 3000px; */
+  top:25%;
+  position:fixed;
+  margin-top: 50px;
+  left:50%;
+  margin-left:-230px;
+
+  z-index: 3;
+
+  @media @phone-width {
+    left: 0 !important;
+    top:0 !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+
+  }
+
+}
+
+.modal-content-callback .wrapper,
+.modal-content-excursion .wrapper {
+  padding: 30px 30px;
+}
+.modal-content-callback p,
+.modal-content-excursion p {
+  font-size: 16px;
+  line-height: 20px;
+
+  font-family: 'Geometria';
+
+  margin-bottom: 15px;
+
+}
+
+
+.modal-content-title {
+  margin-bottom: 12px;
+
+  font-family: 'Geometria-Medium';
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.modal-content-callback form,
+.modal-content-excursion form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-direction: column;
+}
+.modal-content-excursion form label,
+.modal-content-callback form label {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  align-items: baseline;
+
+}
+label .form-label {
+  margin-right: 30px;
+  min-width: 100px;
+
+}
+.modal-content-callback input,
+.modal-content-excursion input {
+  border: 1px solid black;
+  border-radius: 10px;
+
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  padding: 10px 5px;
+}
+.modal-content-callback input:focus,
+.modal-content-excursion input:focus {
+  border: 1px solid #008ac8;
+  border-radius: 10px;
+}
+.modal-content-close {
+  width: 29px;
+  height: 29px;
+
+  font-size: 0;
+
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  position: absolute;
+
+
+  left: 400px;
+
+  @media @phone-width {
+    display: none;
+  }
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top:10px;
+  left:2px;
+
+  width: 29px;
+  height: 3px;
+
+  background-color: #000000;
+  border-radius: 1px;
+
+
+}
+.modal-content-close::before {
+  transform: rotate(45deg);
+  top:11px;
+}
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: flex-start;
+
+
+  background:#eeeeee;
+}
+.modal-content-buttons button {
+  padding: 15px 30px;
+  margin: 20px 10px;
+
+
+  font-size: 14px;
+  line-height: 20px;
+
+  font-family: "Geometria";
+
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+.modal-content-buttons button:first-child{
+  margin-left: 30px;
+}
+.modal-content-buttons .send-btn {
+  background: #008ac8;
+  color: #fff;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.7);
+
+  overflow: hidden;
+}
+.modal-overlay-show {
+  display: block;
+}
