@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title></title>
+    <title> Коттеджный поселок Золотой треугольник </title>
     <link rel="stylesheet" href="css/style.css">
-
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 
   </head>
   <body>
@@ -24,7 +25,7 @@
 
                 <div class="intro__tel">
 
-                  тел.<a href="callto:+7 (3952) 98-92-02">98-92-02</a>
+                  тел.<a href="callto:+73952989202">98-92-02</a>
                 </div>
 
                 <button class="intro__booking">
@@ -89,20 +90,17 @@
           <div class="about-village__parallelogram-bg">
             <h2 class="about-village__title">О ПОСЁЛКЕ</h2>
             <p class="about-village__paragraph">
-              Здесь текст и описание посёлка с тезисами,
-              которые я ещё не придумал, но это скоро случится.
-              Здесь текст и описание посёлка с тезисами, которые я ещё
-              не придумал, но это скоро случится. Здесь текст и описание
-              посёлка с тезисами, которые я ещё не придумал, но это скоро
-              случится. 
+              «Золотой треугольник» - место для комфортной жизни, здорового отдыха и досуга круглый год. В коттеджном посёлке 128 земельных участков в экологичной зоне, в тишине и обособленности от суеты города.
             </p>
             <p class="about-village__paragraph">
-              Здесь текст и описание посёлка с тезисами,
-              которые я ещё не придумал, но это скоро случится. Очень скоро
+              Близкое расположение к лесу и рекам дарит возможность заниматься рыбалкой, собирать всей семьей грибы и землянику.
             </p>
             <p class="about-village__paragraph">
-              Здесь текст и описание посёлка с тезисами,
-              которые я ещё не придумал, но это скоро случится.
+              Доступная стоимость земельных участков позволяет сменить квартиру в городе на собственный просторный дом со всеми коммуникациями.
+            </p>
+
+            <p class="about-village__paragraph">
+              В посёлке всё отлично продуманно: централизованные коммуникации, развитая инфраструктура, единая социальная среда.
             </p>
           </div>
         </div>
@@ -293,7 +291,7 @@
                ГЕНПЛАН ПОСЕЛКА <br> «Золотой треугольник»
              </h2>
              <div class="general-plan-map">
-
+               <img src="/img/general-plan.png"  alt="Генплан">
              </div>
 
              <div class="wrapper">
@@ -343,7 +341,7 @@
                   <img src="/img/double_right.png" alt="">
               </div>
               <li class="three-steps__item">
-                <img src="/img/hands.png"  width="218" height="218"alt="Сделка" class="three-steps__image">
+                <img src="/img/hands.png"  width="218" height="218" alt="Сделка" class="three-steps__image">
                 <h4 class="three-steps__item-title">
                   Оформление сделки
                 </h4>
@@ -426,12 +424,12 @@
                <form class="better-to-see__form" action="">
                    <label>
                        Имя*
-                       <input class="user-name-bts" type="text" name="name" required>
+                       <input class="user-name-bts" type="text" name="name">
                    </label>
 
                    <label>
                      Телефон*
-                     <input id="better-to-see" class="user-phone-bts" type="phone" name="phone" required>
+                     <input id="better-to-see" class="user-phone-bts" type="phone" name="phone">
                    </label>
 
                    <button id="bts-btn" class="better-to-see__submit"> Отправить </button>
@@ -448,7 +446,7 @@
               Адрес электронной почты: address@mail.ru
             </p>
             <p>
-              Политика конфиденциальности
+              <a href="../politika.docx" download>Политика конфидициальности</a>
             </p>
           </div>
         </footer>
@@ -520,7 +518,7 @@
           <div class="modal-overlay"></div>
 
 
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
       <script type="text/javascript" src="js/slick.min.js"></script>
       <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
 
@@ -556,16 +554,6 @@
       	$('.modal-content-excursion, .modal-overlay').hide();
 
       });
-
-
-
-
-
-
-
-
-
-
 
 
       $('#excursion-btn').on('click', function(){
@@ -698,10 +686,6 @@
 
                   });
 
-
-
-
      </script>
-
   </body>
 </html>

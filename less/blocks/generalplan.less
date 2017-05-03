@@ -9,7 +9,7 @@
   margin-bottom: 50px;
   order: 7;
 
-  @media @phone-width {
+  @media @tablet-width {
     display: none;
   }
 }
@@ -43,9 +43,7 @@
 /* пока картинки нет, поставил заглушку */
 .general-plan-map {
   width: 990px;
-  height: 600px;
-
-  background: #c6c6c6;
+  height: 700px;
 
   margin: 0 auto;
   margin-bottom: 30px;
@@ -55,6 +53,7 @@
     margin-bottom: 24px;
   }
 }
+
 
 .general-plan__status--sold::before {
   content: "";
@@ -103,7 +102,9 @@
   }
 
 }
-
+.general-plan__excursion:hover {
+  color: #7ac448;
+}
 .general-plan__excursion::before {
   display: inline-block;
   float: left;
