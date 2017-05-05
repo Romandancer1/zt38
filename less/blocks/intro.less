@@ -17,6 +17,12 @@
 }
 
 header {
+
+ background: #fff;
+
+
+}
+.header-wrapper {
   .container();
 
   padding-top: 15px;
@@ -52,7 +58,7 @@ header {
 
   font-size: 14px;
   line-height: 18px;
-
+  
   @media @phone-width {
     margin: 0 auto;
 
@@ -61,6 +67,9 @@ header {
 
 }
 .intro__logo p {
+  font-family: 'Geometria';
+  color: #000;
+
   @media @tablet-width {
     font-size: 12px;
   }
@@ -73,9 +82,14 @@ header {
   }
 
 }
+.intro__logo p span {
+  font-family: 'Geometria-Medium';
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 .intro__logo-triangle-up {
-    width: 0;
+  /*  width: 0;
     height: 0;
     margin-bottom: 10px;
 
@@ -93,13 +107,15 @@ header {
       border-left: 90px solid transparent;
       border-right: 90px solid transparent;
       border-bottom: 50px solid #91da60;
-    }
+    } */
 }
+
 
 .intro__tel {
   font-size: 30px;
   line-height: 36px;
   font-family: "Geometria-Bold";
+  color: #000;
 
   @media @tablet-width {
     font-size: 24px;
@@ -111,7 +127,7 @@ header {
   }
 }
 .intro__tel a {
-  color: #fff;
+
 }
 
 .intro__booking {
@@ -147,7 +163,7 @@ header {
   width: 100%;
   margin-bottom: 60px;
 
-  background-color: #ffffff;
+  background: rgba(255,255,255,0.7);
 
   @media @tablet-width {
     margin-bottom: 40px;

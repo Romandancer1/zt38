@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title> Коттеджный поселок Золотой треугольник </title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
 
   </head>
   <body>
@@ -18,19 +15,24 @@
 
         <div class="intro">
             <header>
-                <div class="intro__logo">
-                  <div class="intro__logo-triangle-up"></div>
-                  <p>Коттеджный посёлок Золотой треугольник</p>
-                </div>
+               <div class="header-wrapper">
+                  <div class="intro__logo">
+                    <div class="intro__logo-triangle-up">
+                      <img src="/img/logo.png" width="120" height="65" alt="Логотип" >
+                    </div>
+                    <p><span>Золотой треугольник</span></p>
+                    <p>коттеджный посёлок</p>
+                  </div>
 
-                <div class="intro__tel">
+                  <div class="intro__tel">
 
-                  тел.<a href="callto:+73952989202">98-92-02</a>
-                </div>
+                    тел.<a href="callto:+73952989202">98-92-02</a>
+                  </div>
 
-                <button class="intro__booking">
-                    Записаться на экскурсию
-                </button>
+                  <button class="intro__booking">
+                      Записаться на экскурсию
+                  </button>
+              </div>
             </header>
 
             <nav class="main-nav">
@@ -122,53 +124,7 @@
              <div id="map" class="location__map">
              </div>
 
-             <script type="text/javascript">
-                    ymaps.ready(init);
-                    var myMap,
-                        myPlacemark;
 
-                        var isMobile = {
-                            Android: function() {
-                                return navigator.userAgent.match(/Android/i);
-                            },
-                            BlackBerry: function() {
-                                return navigator.userAgent.match(/BlackBerry/i);
-                            },
-                            iOS: function() {
-                                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-                            },
-                            Opera: function() {
-                                return navigator.userAgent.match(/Opera Mini/i);
-                            },
-                            Windows: function() {
-                                return navigator.userAgent.match(/IEMobile/i);
-                            },
-                            any: function() {
-                                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-                            }
-                        };
-
-
-                      function init(){
-                          myMap = new ymaps.Map("map", {
-                              center: [52.405176, 104.246320],
-                              zoom: 11,
-                              controls: []
-                          });
-
-                       myPlacemark = new ymaps.Placemark([52.405176, 104.246320], { hintContent: 'Золотой треугольник', balloonContent: 'Коттеджный поселок' });
-
-                       myMap.geoObjects.add(myPlacemark);
-
-                       if(isMobile.any()){
-                          myMap.behaviors.disable('drag');
-                      }
-
-                       myMap.behaviors.disable('scrollZoom');
-                       myMap.controls.add('zoomControl')
-
-                    }
-                </script>
 
              <button class="location__excursion"> Записаться на просмотр </button>
         </div>
@@ -267,7 +223,7 @@
             <li class="documentation__item">
               <img src="img/download-chemic-doc.png" alt="" class="documentation__image"
               width="51" height="69">
-              <a href="" class="documentation__text">
+              <a href="../Analiz_vodi.pdf" class="documentation__text" download>
                 Скачать <br>
                 Химичесикй <br>
                 анализ воды
@@ -276,7 +232,7 @@
             <li class="documentation__item">
               <img src="img/download-gen-plan.png" alt="" class="documentation__image"
               width="71" height="68">
-              <a href="" class="documentation__text">
+              <a href="../genplan-download.png" class="documentation__text" download>
                 Скачать <br>
                 Генернальный <br>
                 план поселка
@@ -355,12 +311,7 @@
 
         <div id="photos" class="photos">
              <h2 class="photos__title">Фотографии</h2>
-
               <div class="photos__slider">
-             <!--  <a href="" class="photos__slider-btn photos__slider-btn--prev">
-                  <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
-                  <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
-                </a> -->
                 <div class="photos__slider-content">
                   <div>
                     <img src="/img/1.jpg" Alt="Фото">
@@ -371,13 +322,10 @@
                   <div>
                     <img src="/img/3.jpg" Alt="Фото">
                   </div>
-
-
+                  <div>
+                    <img src="/img/4.jpg" Alt="Фото">
+                  </div>
                 </div>
-              <!--  <a href="" class="photos__slider-btn photos__slider-btn--next">
-                  <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
-                  <img src="img/slider-btn-arrow.png" alt="" class="photos__btn-arrow">
-                </a> -->
               </div>
         </div>
 
@@ -394,20 +342,23 @@
              <div class="reviews__item">
 
                <div class="reviews__user">
-                 <img class="reviews__avatar">
+                 <img src="/img/sergei.png" class="reviews__avatar" alt="Аватар">
 
-                 <p class="reviews__author">Владимир</p>
+                 <p class="reviews__author">  Сергей Беспалов</p>
 
-                 <a href="" class="reviews__author-url">vk.com/username</a>
+                 <a href="https://www.facebook.com/sergey.bespalov.3" class="reviews__author-url"><p>https://www.facebook.com/<br>sergey.bespalov.3</p></a>
                </div>
 
                <blockquote class="reviews__quote">
-                   Великолепно, просто шикарно! Великолепно, просто шикарно!
-                   Великолепно, просто шикарно! Великолепно, просто шикарно!
-                   Великолепно, просто шикарно! Великолепно, просто шикарно!
-                   Великолепно, просто шикарно! Великолепно, просто шикарно!
-                   Великолепно, просто шикарно! Великолепно, просто шикарно!
-                   Великолепно, просто шикарно!
+
+
+
+
+                    С супругой давно хотели купить земельный участок для постройки дома. Главным для нас было: быстро добираться до работы (работаем в центре), возможность подключить свет-воду и чтобы место было красивым, чтобы лесок рядом.<br><br>
+
+                    Ездили, выбирали несколько месяцев. Приехали посмотреть место в Золотом треугольнике в середине апреля и после экскурсии поняли, что нашли то, что искали.<br><br>
+
+                    Спасибо Александру Евгеньевичу, очень понятно объяснил и показал плюсы расположения участков. Рады, что приобрели участок здесь! Желаю поселку развития, ждём хороших соседей!<br><br>
                </blockquote>
 
              </div>
@@ -417,7 +368,7 @@
              <div class="better-to-see__container-wrap">
                <h2 class="better-to-see__title">Лучше 1 раз увидеть</h2>
                <p class="better-to-see__info">
-                 звоните 98-92-02 <br>
+                 звоните +7(914)898-92-02 <br>
                  Запишитесь на бесплатную экскурсию
                </p>
 
@@ -443,7 +394,7 @@
 
               Все права защищены, 2017 г.«Золотой треугольник» <br>
               Не является публичной офертой <br>
-              Адрес электронной почты: address@mail.ru
+              Адрес электронной почты: goldentriangle@bk.ru
             </p>
             <p>
               <a href="../politika.docx" download>Политика конфидициальности</a>
@@ -517,11 +468,59 @@
 
           <div class="modal-overlay"></div>
 
-
-
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/slick.min.js"></script>
       <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
 
+
+      <script type="text/javascript">
+             ymaps.ready(init);
+             var myMap,
+                 myPlacemark;
+
+                 var isMobile = {
+                     Android: function() {
+                         return navigator.userAgent.match(/Android/i);
+                     },
+                     BlackBerry: function() {
+                         return navigator.userAgent.match(/BlackBerry/i);
+                     },
+                     iOS: function() {
+                         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                     },
+                     Opera: function() {
+                         return navigator.userAgent.match(/Opera Mini/i);
+                     },
+                     Windows: function() {
+                         return navigator.userAgent.match(/IEMobile/i);
+                     },
+                     any: function() {
+                         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                     }
+                 };
+
+
+               function init(){
+                   myMap = new ymaps.Map("map", {
+                       center: [52.405176, 104.246320],
+                       zoom: 11,
+                       controls: []
+                   });
+
+                myPlacemark = new ymaps.Placemark([52.405176, 104.246320], { hintContent: 'Золотой треугольник', balloonContent: 'Коттеджный поселок' });
+
+                myMap.geoObjects.add(myPlacemark);
+
+                if(isMobile.any()){
+                   myMap.behaviors.disable('drag');
+               }
+
+                myMap.behaviors.disable('scrollZoom');
+                myMap.controls.add('zoomControl')
+
+             }
+         </script>
 
 
 
